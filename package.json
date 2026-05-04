@@ -1,0 +1,22 @@
+{
+  "name": "promesas_anidadas",
+  "version": "1.0.0",
+  "description": "Guia de ejercicios de node y js.",
+  "main": "miIndex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbelAlmada92/Ejercicio_Node_JS_Promesas_Anidadas.git"
+  },
+  "author": "Abel_Almada_Meza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbelAlmada92/Ejercicio_Node_JS_Promesas_Anidadas/issues"
+  },
+  "homepage": "https://github.com/AbelAlmada92/Ejercicio_Node_JS_Promesas_Anidadas#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
