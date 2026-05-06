@@ -1,3 +1,5 @@
+const colors = require ("colors");
+const { ejecutarCuenta } = require("../Ejercicio1/cuentaBancaria");
 
 const alumno = {
     nombre : "Carlos",
@@ -11,9 +13,9 @@ const validarCorrelativa = (alumno) => {
         console.log("Validando correlativas...");
         setTimeout(() =>{
             if(!alumno.debeMaterias){
-                resolve ("No debe ninguna materia")
+                resolve ("No debe ninguna materia".green)
             }else{
-                reject("Error: El alumno adeuda materias.");
+                reject("Error: El alumno adeuda materias.".red);
             }
         }, 2000)
     })
@@ -23,7 +25,7 @@ const inscripcionMaterias = (alumno, materia) => {
     return new Promise ((resolve) =>{
     setTimeout(() => {
         alumno.materias.push(materia);
-        resolve(`Inscripcion correcta a la materia ${materia}`);
+        resolve(`Inscripcion correcta a la materia ${materia}`.green);
      }, 5000);
     });
 };
@@ -40,11 +42,8 @@ validarCorrelativa(alumno)
         console.error(error);
     })
     .finally(() =>{
-        console.log("La operación a finalizado.");
+        console.log("La operación a finalizado.".yellow);
         console.log("Estado final del alumno", alumno)
     });
 
-// ejecución
-
-inscripcionMaterias(alumno, "Bases de datos")
-console.log(alumno.inscripcionMaterias)
+module.exports = {ejecutarInstituto}
